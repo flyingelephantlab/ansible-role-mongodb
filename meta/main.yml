@@ -1,6 +1,6 @@
 ---
 
-version:  1.4.7
+# version:  1.4.7  ## This line is no longer supported in Ansible 2
 dependencies: []
 
 galaxy_info:
