@@ -20,7 +20,7 @@
   when: "'systemd' in systemd.stdout"
 
 - name: Add APT key
-  apt_key: url="{{mongodb_apt_key_url}}" id="{{mongodb_apt_key_id}}"
+  apt_key: url="{{mongodb_apt_key_url}}" id="{{mongodb_apt_key_id}}" validate_certs=no
 
 - name: Add APT repository
   apt_repository: repo="{{mongodb_repository}}" update_cache=yes
